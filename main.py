@@ -48,11 +48,17 @@ for i in range(len(songs)):
         song_dict[i//5].append(j['uri'])
         
 songs_features = defaultdict(list)
-fin_features = {}
+fin_features 
 
 
 for i in range(len(song_dict)):
     songs_features[i].append(sp.audio_features(song_dict[i]))
+
+fin_features = [0, 1 ,2, 3, 4]
+for i in range(len(songs_features)):
+    for j in songs_features[i][0]:
+        print(j.get(features))
+        
 
 # =============================================================================
 # for k,v in range(len(songs_features)):
